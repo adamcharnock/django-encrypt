@@ -56,22 +56,22 @@ law (i.e. no PCI compliance).
     * Encrypt sensitive data using secret known only to the data owner.
 * Accidental data exposure [mitigation goal: **complete**]
     * Encrypt sensitive data using secret known only to the data owner
-* Application-level attacks [mitigation goal: *partial*]
+* Application-level attacks [mitigation goal: **partial**]
     * Application-level attacks which result in database exposure
       can be protected against. However, attaches related to CSRF,
       XSS, phishing etc are outside the package's remit.
       *Alternative: django-security.*
-* Disclosure as compelled by law [mitigation goal: *partial*]
+* Disclosure as compelled by law [mitigation goal: **partial**]
     * Disclosure would require the interception of the user's secret,
       thereby requiring the user to login.
       *Alternative: unknown.*
-* ~~Offline theft of login details~~ [mitigation goal: *none*]
+* ~~Offline theft of login details~~ [mitigation goal: **none**]
     * Outside this package's remit
       *Alternative: User education in password security*
-* Network-level unauthorized server access [mitigation goal: *partial*]
+* Network-level unauthorized server access [mitigation goal: **partial**]
     * Data-theft would require the interception of the user's secret
       *Alternative: Network-level security, AppArmor etc*
-* Administrator authorized server access [mitigation goal: *partial*]
+* Administrator authorized server access [mitigation goal: **partial**]
     * Data-theft would require the interception of the user's secret
       *Alternative: Operational partitioning (i.e. minimize access by humans)*
 
